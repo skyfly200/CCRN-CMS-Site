@@ -1,9 +1,12 @@
+
 <template>
   <v-app dark>
     <Home v-if="isHome" />
     <Contact v-else-if="isContact" />
     <Streams v-else-if="isStreams" />
     <StreamPage v-else-if="isStream" />
+    <Archives v-else-if="isArchives" />
+    <ArchivePage v-else-if="isArchive" />
     <Events v-else-if="isEvents" />
     <EventPage v-else-if="isEvent" />
     <Blog v-else-if="isBlog" />
@@ -17,6 +20,8 @@
   import Contact from './Contact';
   import Streams from './Streams';
   import StreamPage from './StreamPage';
+  import Archives from './Archives';
+  import ArchivePage from './ArchivePage';
   import Events from './Events';
   import EventPage from './EventPage';
   import Blog from './Blog';
@@ -29,6 +34,8 @@
         Contact,
         Streams,
         StreamPage,
+        Archives,
+        ArchivePage,
         Events,
         EventPage,
         Blog,
@@ -49,6 +56,10 @@
           const {path} = this.$page;
           return path === "/streams/";
         },
+        isArchives() {
+          const {path} = this.$page;
+          return path === "/archives/";
+        },
         isEvents() {
           const {path} = this.$page;
           return path === "/events/";
@@ -60,6 +71,10 @@
         isStream() {
           const {path} = this.$page;
           return path.startsWith("/streams/");
+        },
+        isArchive() {
+          const {path} = this.$page;
+          return path.startsWith("/archives/");
         },
         isEvent() {
           const {path} = this.$page;

@@ -3,6 +3,9 @@
     <Nav />
     <v-content>
       <v-container fluid>
+        <v-layout class="pa-4 page-title">
+          <h1>{{ $page.title }}</h1>
+        </v-layout>
         <v-card class="pa-4 ma-4">
           <h1> {{ $page.frontmatter.contactBlurb }} </h1>
           <h2> {{ $page.frontmatter.phone }} </h2>

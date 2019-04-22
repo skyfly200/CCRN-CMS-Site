@@ -1,6 +1,5 @@
 ---
 title: Blog
 ---
-# Blog Posts
 
-* test blog page
+Stay up to date on CCRNs happenings

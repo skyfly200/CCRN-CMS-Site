@@ -39,36 +39,47 @@ module.exports = {
         search: false,
         repo: 'skyfly200/CCRN-CMS-Site',
         lastUpdated: 'Last Updated', // string | boolean
-        nav: [{
-                text: 'Home',
-                link: '/',
-                icon: 'home'
-            },
-            {
-                text: 'Bio',
-                link: '/bio.html',
-                icon: 'face'
-            },
-            {
-                text: 'Streams',
-                link: '/streams/',
-                icon: 'music_note'
-            },
-            {
-                text: 'Events',
-                link: '/events/',
-                icon: 'calendar_today'
-            },
-            {
-                text: 'Blog',
-                link: '/posts/',
-                icon: 'format_quote'
-            },
-            {
-                text: 'Contact',
-                link: '/contact.html',
-                icon: 'email'
-            },
+        nav: [
+          {
+              text: 'Home',
+              link: '/',
+              icon: 'home'
+          },
+          {
+              text: 'About',
+              link: '/about.html',
+              icon: 'face'
+          },
+          {
+              text: 'Streams',
+              link: '/streams/',
+              icon: 'music_note'
+          },
+          {
+              text: 'Schedule',
+              link: '/schedule.html',
+              icon: 'calendar_today'
+          },
+          {
+              text: 'Archives',
+              link: '/archives/',
+              icon: 'music_note'
+          },
+          {
+              text: 'Events',
+              link: '/events/',
+              icon: 'calendar_today'
+          },
+          {
+              text: 'Blog',
+              link: '/posts/',
+              icon: 'format_quote'
+          },
+          {
+              text: 'Contact',
+              link: '/contact.html',
+              icon: 'email'
+          }
         ],
         serviceWorker: {
           updatePopup: true

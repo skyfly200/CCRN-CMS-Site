@@ -1,6 +1,5 @@
 ---
 title: Events
 ---
-# Events
 
-* CCRN Sponsored Events
+Explore CCRN Sponsored Events
