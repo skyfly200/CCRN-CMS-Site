@@ -1,11 +1,11 @@
 backend:
   name: github
-  repo: skyfly200/Daniel-Vega-Site
+  repo: skyfly200/CCRN-CMS-Site
   branch: master
 
 public_folder: "/assets"
 media_folder: ".vuepress/public/assets"
-display_url: https://daniel-vega.netlify.com
+display_url: https://ccrn-site.netlify.com
 
 collections:
   - name: "pages"

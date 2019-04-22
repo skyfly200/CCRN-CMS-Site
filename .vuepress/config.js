@@ -1,10 +1,10 @@
 module.exports = {
-    title: "CMS Template",
+    title: "CCRN Website",
     locales: {
         '/': {
             lang: 'en-EN',
-            title: 'CMS Template',
-            description: "VuePress NetlifyCMS Website"
+            title: 'CCRN Website',
+            description: "Colorado Community Radio Network"
         }
     },
     head: [
@@ -37,7 +37,7 @@ module.exports = {
     host: 'localhost',
     themeConfig: {
         search: false,
-        repo: 'skyfly200/CMS-Template',
+        repo: 'skyfly200/CCRN-CMS-Site',
         lastUpdated: 'Last Updated', // string | boolean
         nav: [{
                 text: 'Home',
