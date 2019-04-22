@@ -58,17 +58,17 @@ module.exports = {
           {
               text: 'Schedule',
               link: '/schedule.html',
-              icon: 'calendar_today'
+              icon: 'schedule'
           },
           {
               text: 'Archives',
               link: '/archives/',
-              icon: 'music_note'
+              icon: 'archive'
           },
           {
               text: 'Events',
               link: '/events/',
-              icon: 'calendar_today'
+              icon: 'place'
           },
           {
               text: 'Blog',
