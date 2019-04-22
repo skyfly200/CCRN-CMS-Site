@@ -1,6 +1,6 @@
 ---
 title: Events
 ---
-# Upcoming Events
+# Events
 
-* test events page
+* CCRN Sponsored Events
