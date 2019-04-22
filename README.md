@@ -7,5 +7,7 @@ parallaxContent: "Pure Community Radio Redefined"
 ---
 
 We are a network of autonomous, independent, volunteer driven stations
+
 Nonprofit, Commercial Free and Uncensored
+
 Connecting and empowering our communities through the power of the airwaves
