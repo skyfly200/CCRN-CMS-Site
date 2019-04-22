@@ -50,8 +50,8 @@ module.exports = {
                 icon: 'face'
             },
             {
-                text: 'Listen',
-                link: '/works/',
+                text: 'Streams',
+                link: '/streams/',
                 icon: 'music_note'
             },
             {

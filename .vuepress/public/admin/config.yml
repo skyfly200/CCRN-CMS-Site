@@ -57,6 +57,19 @@ collections:
       - {label: "Is a Playlist", name: "playlist", widget: "boolean", required: false}
       - {label: "Embed Code", name: "raw", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown", required: false}
+  - name: "archive"
+    label: "Archive"
+    folder: "archive"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Type", name: "workType", widget: "select", options: ["stream", "audio", "video", "youtube"]}
+      - {label: "File", name: "file", widget: "file", required: false}
+      - {label: "ID", name: "id", widget: "string", required: false}
+      - {label: "Is a Playlist", name: "playlist", widget: "boolean", required: false}
+      - {label: "Embed Code", name: "raw", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: "events"
     label: "Events"
     folder: "events"

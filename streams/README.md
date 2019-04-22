@@ -1,6 +1,6 @@
 ---
-pageClass: "listen"
-title: "Listen"
+pageClass: "streams"
+title: "Streams"
 ---
 
-# Listen
+# Streams
