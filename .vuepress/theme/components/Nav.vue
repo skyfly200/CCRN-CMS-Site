@@ -19,7 +19,7 @@
       <v-toolbar-side-icon @click.stop="drawer = !drawer" class="hidden-md-and-up">
         <v-icon>menu</v-icon>
       </v-toolbar-side-icon>
-      <v-toolbar-title> {{ title }} </v-toolbar-title>
+      <v-toolbar-title>Colorado Commnity Radio Network</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn flat
@@ -37,9 +37,6 @@
       computed: {
           menuPages() {
             return this.$site.themeConfig.nav || [];
-          },
-          title() {
-            return this.$site.title;
           }
       },
       data: function() {

@@ -1,6 +1,5 @@
 module.exports = {
     title: "CCRN",
-    fullTitle: "Colorado Community Radio Network",
     locales: {
         '/': {
             lang: 'en-EN',
