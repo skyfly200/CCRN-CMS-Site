@@ -27,13 +27,7 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Menu Icon", name: "menuIcon", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
-      - label: "Schedule"
-        name: "schedule"
-        file: "schedule.md"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Menu Icon", name: "menuIcon", widget: "string"}
+          - {label: "Image", name: "image", widget: "file"}
           - {label: "Body", name: "body", widget: "markdown"}
       - label: "Contact"
         name: "contact"
