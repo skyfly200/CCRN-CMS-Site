@@ -61,14 +61,14 @@ module.exports = {
               icon: 'schedule'
           },
           {
-              text: 'Archives',
-              link: '/archives/',
-              icon: 'archive'
-          },
-          {
               text: 'Events',
               link: '/events/',
               icon: 'place'
+          },
+          {
+              text: 'Archives',
+              link: '/archives/',
+              icon: 'archive'
           },
           {
               text: 'Blog',
