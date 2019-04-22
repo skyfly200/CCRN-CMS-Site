@@ -8,6 +8,7 @@
       <Audio v-if="frontmatter.workType === 'audio'" :frontmatter="frontmatter"/>
       <Stream v-if="frontmatter.workType === 'stream'" :frontmatter="frontmatter"/>
       <Video v-if="frontmatter.workType === 'video'" :frontmatter="frontmatter"/>
+      <Photo v-if="frontmatter.workType === 'photo'" :frontmatter="frontmatter"/>
       <YouTube v-if="frontmatter.workType === 'youtube'" :frontmatter="frontmatter"/>
       <slot></slot>
     </v-card-text>
@@ -20,6 +21,7 @@
 import Audio from './Audio';
 import Stream from './Stream';
 import Video from './Video';
+import Photo from './Photo';
 import YouTube from './YouTube';
 export default {
   props: ["frontmatter", "path", "feature"],
@@ -27,6 +29,7 @@ export default {
     Audio,
     Stream,
     Video,
+    Photo,
     YouTube
   },
 };
