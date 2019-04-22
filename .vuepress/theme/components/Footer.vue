@@ -1,6 +1,6 @@
 <template>
   <v-footer app absolute dark>
-    <span>&copy; Colorado Community Radio Network {{ copyrightYear }}</span>
+    <span>&copy; {{ fullTitle }} {{ copyrightYear }}</span>
   </v-footer>
 </template>
 <script>
@@ -8,6 +8,9 @@
       computed: {
         copyrightYear() {
           return new Date().getFullYear();
+        },
+        fullTitle() {
+          return this.$site.fullTitle;
         }
       },
   };
