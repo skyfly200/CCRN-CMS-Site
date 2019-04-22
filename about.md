@@ -1,6 +1,6 @@
 ---
-pageClass: "bio"
-title: "Bio"
+pageClass: "About"
+title: "About"
 ---
 
 # About

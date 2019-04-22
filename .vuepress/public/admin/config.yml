@@ -21,9 +21,9 @@ collections:
           - {label: "Parallax Header", name: "parallaxHeader", widget: "string"}
           - {label: "Parallax Content", name: "parallaxContent", widget: "text"}
           - {label: "Body", name: "body", widget: "markdown"}
-      - label: "Bio"
-        name: "bio"
-        file: "bio.md"
+      - label: "About"
+        name: "about"
+        file: "about.md"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Menu Icon", name: "menuIcon", widget: "string"}
