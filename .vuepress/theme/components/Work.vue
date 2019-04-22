@@ -6,6 +6,7 @@
     <v-divider light></v-divider>
     <v-card-text>
       <Audio v-if="frontmatter.workType === 'audio'" :frontmatter="frontmatter"/>
+      <Archive v-if="frontmatter.workType === 'archive'" :frontmatter="frontmatter"/>
       <Stream v-if="frontmatter.workType === 'stream'" :frontmatter="frontmatter"/>
       <Video v-if="frontmatter.workType === 'video'" :frontmatter="frontmatter"/>
       <Photo v-if="frontmatter.workType === 'photo'" :frontmatter="frontmatter"/>
@@ -19,6 +20,7 @@
 </template>
 <script>
 import Audio from './Audio';
+import Archive from './Archive';
 import Stream from './Stream';
 import Video from './Video';
 import Photo from './Photo';
@@ -27,6 +29,7 @@ export default {
   props: ["frontmatter", "path", "feature"],
   components: {
     Audio,
+    Archive,
     Stream,
     Video,
     Photo,
