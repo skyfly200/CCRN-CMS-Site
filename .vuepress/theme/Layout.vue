@@ -2,6 +2,7 @@
 <template>
   <v-app dark>
     <Home v-if="isHome" />
+    <About v-else-if="isAbout" />
     <Contact v-else-if="isContact" />
     <Streams v-else-if="isStreams" />
     <StreamPage v-else-if="isStream" />
@@ -17,6 +18,7 @@
 </template>
 <script>
   import Home from './Home';
+  import About from './About';
   import Contact from './Contact';
   import Streams from './Streams';
   import StreamPage from './StreamPage';
@@ -31,6 +33,7 @@
   export default {
       components: {
         Home,
+        About,
         Contact,
         Streams,
         StreamPage,
@@ -47,6 +50,10 @@
         isHome() {
           const {path} = this.$page;
           return path === "/";
+        },
+        isAbout() {
+          const {path} = this.$page;
+          return path === "/about.html";
         },
         isContact() {
           const {path} = this.$page;

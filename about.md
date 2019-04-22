@@ -1,6 +1,7 @@
 ---
 pageClass: "About"
 title: "About"
+image: "/assets/FDGD2015.jpg"
 ---
 
 Colorado Community Radio Network is a group of independent, volunteer run, commercial free radio stations, that focus on providing their audience with coverage, that is relevant to local communities. We formed in the spring of 2013, united by our battle against the corporate domination of the air waves. At our first meeting, at the Very Nice Brewing Company in Nederland, we brainstormed how our stations could effectively work together, while remaining independent. Since then we have been sharing content and equipment, sponsoring and live broadcasting local events, covering music festivals, promoting the the network and helping each other stay on air.
