@@ -7,7 +7,7 @@
     <v-card-text>
       <h2>{{ frontmatter.frequency }} {{ frontmatter.callsign }}</h2>
       <h3>Location: {{ frontmatter.location }}</h3>
-      <Stream class="stream section ma-2" :frontmatter="{ url: frontmatter.streamUrl }" />
+      <Stream class="stream" :frontmatter="{ url: frontmatter.streamUrl }" />
       <p>{{ frontmatter.description }}</p>
       <Schedule :schedule="frontmatter.schedule" />
       <slot></slot>

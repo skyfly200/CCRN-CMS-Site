@@ -98,4 +98,7 @@
   .container {
     padding: 0
   }
+  body p {
+    font-size: 1.2em
+  }
 </style>

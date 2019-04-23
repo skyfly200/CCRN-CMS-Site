@@ -6,7 +6,7 @@
         <v-parallax :src="$page.frontmatter.parallaxImage">
           <div class="paralax-content">
             <h1> {{ $page.frontmatter.parallaxHeader }} </h1>
-            <p> {{ $page.frontmatter.parallaxContent }} </p>
+            <h3> {{ $page.frontmatter.parallaxContent }} </h3>
           </div>
         </v-parallax>
         <v-layout class="hidden-sm-and-down">
