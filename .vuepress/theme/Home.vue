@@ -17,7 +17,7 @@
               {{ page.text}}
           </v-btn>
         </v-layout>
-        <v-layout class="pa-4">
+        <v-layout class="pa-4" wrap >
           <v-flex xs12 sm4 class="logo">
             <v-img src="/assets/CCRN_logo.png" />
           </v-flex>
