@@ -5,9 +5,9 @@
       <v-container fluid>
         <v-layout class="pa-4" align-center justify-center fill-height>
           <v-flex xs12 md10>
-            <Work :frontmatter="$page.frontmatter" :title="$page.title" :path="$page.path">
+            <Station class="stream section ma-2" :feature="true" :frontmatter="$page.frontmatter" :title="$page.title" :path="$page.path" >
               <Content />
-            </Work>
+            </Station>
           </v-flex>
         </v-layout>
       </v-container>
@@ -16,11 +16,11 @@
 </template>
 <script>
 import Nav from "./components/Nav"
-import Work from "./components/Work"
+import Station from "./components/Station"
 export default {
   components: {
     Nav,
-    Work
+    Station
   }
 };
 </script>

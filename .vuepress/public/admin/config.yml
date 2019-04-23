@@ -45,18 +45,20 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "streams"
-    label: "Streams"
-    folder: "streams"
+  - name: "stations"
+    label: "Stations"
+    folder: "stations"
     create: true
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Type", name: "workType", widget: "select", options: ["stream"]}
-      - {label: "File", name: "file", widget: "file", required: false}
-      - {label: "ID", name: "id", widget: "string", required: false}
-      - {label: "Is a Playlist", name: "playlist", widget: "boolean", required: false}
-      - {label: "Embed Code", name: "raw", widget: "string", required: false}
+      - {label: "Callsign", name: "callsign", widget: "string"}
+      - {label: "Frequency", name: "frequency", widget: "string"}
+      - {label: "Website Url", name: "web-url", widget: "string"}
+      - {label: "Stream Url", name: "stream-url", widget: "string"}
+      - {label: "Location", name: "location", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Schedule HTML", name: "schedule", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown", required: false}
   - name: "archives"
     label: "Archives"

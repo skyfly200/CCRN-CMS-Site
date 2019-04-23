@@ -4,8 +4,8 @@
     <Home v-if="isHome" />
     <About v-else-if="isAbout" />
     <Contact v-else-if="isContact" />
-    <Streams v-else-if="isStreams" />
-    <StreamPage v-else-if="isStream" />
+    <Stations v-else-if="isStations" />
+    <StationPage v-else-if="isStation" />
     <Archives v-else-if="isArchives" />
     <ArchivePage v-else-if="isArchive" />
     <Events v-else-if="isEvents" />
@@ -20,8 +20,8 @@
   import Home from './Home';
   import About from './About';
   import Contact from './Contact';
-  import Streams from './Streams';
-  import StreamPage from './StreamPage';
+  import Stations from './Stations';
+  import StationPage from './StationPage';
   import Archives from './Archives';
   import ArchivePage from './ArchivePage';
   import Events from './Events';
@@ -35,8 +35,8 @@
         Home,
         About,
         Contact,
-        Streams,
-        StreamPage,
+        Stations,
+        StationPage,
         Archives,
         ArchivePage,
         Events,
@@ -59,9 +59,9 @@
           const {path} = this.$page;
           return path === "/contact.html";
         },
-        isStreams() {
+        isStations() {
           const {path} = this.$page;
-          return path === "/streams/";
+          return path === "/stations/";
         },
         isArchives() {
           const {path} = this.$page;
@@ -75,9 +75,9 @@
           const {path} = this.$page;
           return path === "/posts/";
         },
-        isStream() {
+        isStation() {
           const {path} = this.$page;
-          return path.startsWith("/streams/");
+          return path.startsWith("/stations/");
         },
         isArchive() {
           const {path} = this.$page;

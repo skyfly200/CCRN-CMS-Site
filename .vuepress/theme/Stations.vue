@@ -10,10 +10,8 @@
           <Content />
         </v-layout>
         <v-layout class="pa-2" justify-left row wrap fill-height>
-          <v-flex v-for="w in works" :key="w.title" xs12 md6>
-            <Work class="work section ma-2" feature="true" v-bind="w">
-              <p> {{ w.frontmatter.description }} </p>
-            </Work>
+          <v-flex v-for="s in stations" :key="s.title" xs12 md6>
+            <Station class="stream section ma-2" v-bind="s" feature="false" />
           </v-flex>
         </v-layout>
       </v-container>
@@ -22,14 +20,14 @@
 </template>
 <script>
 import Nav from "./components/Nav"
-import Work from "./components/Work"
+import Station from "./components/Station"
 export default {
   components: {
     Nav,
-    Work
+    Station
   },
   computed: {
-      works() {
+      stations() {
         return this.$site.pages
           .filter(page => page.path.endsWith(".html") && page.path.startsWith(this.$page.path))
           .sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
