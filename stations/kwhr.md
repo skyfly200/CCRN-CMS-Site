@@ -2,6 +2,7 @@
 title: Way High Radio
 callsign: KWHR
 frequency: 90.5 FM
+image: /assets/KWHR_logo.jpg
 streamUrl: http://206.189.237.110:8000/KWHR
 webUrl: http://www.wayhighradio.com
 location: Ward, CO

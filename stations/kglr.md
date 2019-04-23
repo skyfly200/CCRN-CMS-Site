@@ -2,6 +2,7 @@
 title: Green Light Radio
 callsign: KGLR
 frequency: 93.1 FM
+image: /assets/KGLR_logo.jpg
 streamUrl: http://173.244.209.143:8110/live
 webUrl: http://greenlightradio.com/
 location: Boulder, CO
