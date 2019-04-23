@@ -11,7 +11,7 @@
         </v-layout>
         <v-layout class="pa-2" justify-left row wrap fill-height>
           <v-flex v-for="s in stations" :key="s.title" xs12 md6>
-            <Station class="stream section ma-2" v-bind="s" feature="false" />
+            <Station class="stream section ma-2" v-bind="s" :feature="false" />
           </v-flex>
         </v-layout>
       </v-container>
