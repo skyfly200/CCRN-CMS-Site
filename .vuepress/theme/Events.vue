@@ -6,12 +6,12 @@
         <v-layout class="pa-4 page-title">
           <h1>{{ $page.title }}</h1>
         </v-layout>
-        <v-layout class="pa-4">
+        <v-layout row class="pa-4">
           <Content />
         </v-layout>
-        <v-layout class="pa-2" align-center justify-left row fill-height>
-          <v-flex v-for="e in events" :key="e.title" xs12 md6>
-            <EventItem class="work section ma-2" feature="true" v-bind="e">
+        <v-layout class="pa-2" align-center justify-left row fill-height wrap>
+          <v-flex v-for="e in events" :key="e.title" xs12 sm6 md4>
+            <EventItem class="work section ma-2" :feature="false" v-bind="e">
               <p> {{ e.frontmatter.description }} </p>
             </EventItem>
           </v-flex>
