@@ -6,7 +6,7 @@
         <v-layout class="pa-4 page-title">
           <h1>{{ $page.title }}</h1>
         </v-layout>
-        <v-card class="pa-4 ma-4">
+        <v-card class="contact-info pa-4 ma-4">
           <h1> {{ $page.frontmatter.contactBlurb }} </h1>
           <h2> {{ $page.frontmatter.phone }} </h2>
           <h2> {{ $page.frontmatter.email }} </h2>
@@ -113,5 +113,15 @@ export default {
 <style>
   .card-header {
     text-align: center;
+  }
+  @media( max-width: 425px ) {
+    .contact-info {
+      font-size: 0.9em;
+    }
+  }
+  @media( max-width: 350px ) {
+    .contact-info {
+      font-size: 0.75em;
+    }
   }
 </style>
