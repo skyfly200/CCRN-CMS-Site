@@ -17,11 +17,11 @@
               {{ page.text}}
           </v-btn>
         </v-layout>
-        <v-layout class="pa-4" wrap >
-          <v-flex xs12 sm4 class="logo">
-            <v-img src="/assets/CCRN_logo.png" />
+        <v-layout class="pa-4 body" wrap >
+          <v-flex class="logo">
+            <v-img width="100%" max-width="300" src="/assets/CCRN_logo.png" />
           </v-flex>
-          <v-flex xs12 sm8 class="text"><Content /></v-flex>
+          <v-flex class="text"><Content /></v-flex>
         </v-layout>
       </v-container>
     </v-content>
@@ -49,10 +49,14 @@ export default {
     flex-direction: column;
   }
   .logo {
-    margin: 30px;
+    margin: 10px;
+  }
+  .body {
+    display: flex;
+    align-items: center;
   }
   .text {
-    margin: 30px;
+    margin: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
