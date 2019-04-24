@@ -1,6 +1,6 @@
 <template>
   <div class="archivePlayer" v-bind:style="{ height: height + 'px'}">
-    <iframe :src="contentUrl" width="100%" :height="height" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+    <iframe :src="contentUrl" v-bind:style="{ height: height + 'px'}" width="100%" :height="height" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
   </div>
 </template>
 <script>
@@ -9,11 +9,15 @@ export default {
   computed: {
     contentUrl: function() {
       let url = "https://archive.org/embed/" + this.frontmatter.id;
-      if (this.frontmatter.playlist) url = url + "&playlist=1";
+      if (this.frontmatter.playlist) url = url + "&playlist=1&list_height=" + this.listHeight;
       return url;
     },
     height: function() {
-      return this.frontmatter.playlist ? 90 : 30;
+      return this.frontmatter.playlist ? (this.listHeight + 30) : 30;
+    },
+    listHeight: function() {
+      let count = 7;
+      return (17 * count);
     }
   }
 };
@@ -28,6 +32,5 @@ export default {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
   }
 </style>
