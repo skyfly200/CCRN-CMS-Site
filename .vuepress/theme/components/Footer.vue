@@ -1,6 +1,6 @@
 <template>
   <v-footer app absolute dark>
-    <span>&copy; Colorado Community Radio Network {{ copyrightYear }}</span>
+    <span>&copy; Skyler Fly-Wilson {{ copyrightYear }}</span>
   </v-footer>
 </template>
 <script>
