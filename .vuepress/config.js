@@ -1,5 +1,6 @@
 module.exports = {
     title: "CCRN",
+    ga: 'UA-48750126-1',
     locales: {
         '/': {
             lang: 'en-EN',
@@ -23,7 +24,7 @@ module.exports = {
     plugins: [
       [
         '@vuepress/google-analytics',
-        { ga: '' }
+            { ga: 'UA-48750126-1' }
       ]
     ],
     configureWebpack: (config, isServer) => {
