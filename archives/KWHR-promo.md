@@ -1,8 +1,10 @@
 ---
 title: Way High Radio Promo Video
-workType: youtube
-id: gYpYreUpXYk
-playlist: false
-raw: false
+created: May 17th 2019
+media:
+  - title: Youtube Video
+    type: youtube
+    id: gYpYreUpXYk
+    description: 
 ---
 
