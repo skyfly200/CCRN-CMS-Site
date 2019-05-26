@@ -18,7 +18,7 @@
           </v-btn>
         </v-layout>
         <v-layout class="pa-4 body" wrap >
-          <v-flex class="logo">
+          <v-flex xs12 md10 offset-md1 class="logo">
             <v-img width="100%" max-width="300" src="/assets/CCRN_logo.png" />
           </v-flex>
           <v-flex class="text"><Content /></v-flex>
