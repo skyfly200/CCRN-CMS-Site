@@ -4,9 +4,9 @@
     <v-content>
       <v-container fluid>
         <v-parallax :src="$page.frontmatter.parallaxImage">
-          <div class="paralax-content">
-            <h1> {{ $page.frontmatter.parallaxHeader }} </h1>
-            <h3> {{ $page.frontmatter.parallaxContent }} </h3>
+          <div class="paralax-body">
+            <h1 class="paralax-title"> {{ $page.frontmatter.parallaxHeader }} </h1>
+            <h3 class="paralax-content"> {{ $page.frontmatter.parallaxContent }} </h3>
           </div>
         </v-parallax>
         <v-layout class="hidden-sm-and-down">
@@ -66,11 +66,18 @@ export default {
 };
 </script>
 <style>
-  .paralax-content {
+  .paralax-body {
     text-align: center;
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-shadow: 2px 2px 10px black;
+  }
+  .paralax-title {
+    font-size: 3em;
+  }
+  .paralax-content {
+    font-size: 1.8em;
   }
   .heading {
     display: flex;
@@ -86,6 +93,9 @@ export default {
   }
   .quote {
     font-size: 2em;
+  }
+  .quote-avatar .v-image {
+    transform: rotate(-90deg);
   }
   .quote-attr {
     display: flex;
