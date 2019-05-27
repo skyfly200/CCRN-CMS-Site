@@ -11,15 +11,15 @@ quoteAvatar: "/assets/Skyler-pic.jpg"
 cards:
     - text: Autonomous, independent, volunteer driven radio stations
       icon: radio
-      linkTo: /stations.html
+      linkTo: /stations/
       linkText: Stations
     - text: Not for profit, commercial free and uncensored
       icon: "money_off"
-      linkTo: /about.html
+      linkTo: /about/
       linkText: About
     - text: Empowering communities through the power of the airwaves
       icon: "wifi_tethering"
-      linkTo: /contact.html
+      linkTo: /contact/
       linkText: Contact
 ---
 
