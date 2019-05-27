@@ -15,8 +15,11 @@
           <v-flex xs12 md6>
               <v-timeline>
                 <v-timeline-item v-for="i in items" :key="i.title">
+                    <template v-slot:opposite>
+                        <span>{{ i.frontmatter.date }}</span>
+                    </template>
                     <TimelineItem class="post section ma-2" :frontmatter="i.frontmatter" :title="i.title" :path="i.path" feature="true" md12 >
-                    <p> {{ i.frontmatter.description }} </p>
+                        <p>{{ i.frontmatter.description }}</p>
                     </TimelineItem>
                 </v-timeline-item>
             </v-timeline>
