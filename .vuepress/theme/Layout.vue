@@ -12,6 +12,8 @@
     <EventPage v-else-if="isEvent" />
     <Blog v-else-if="isBlog" />
     <PostPage v-else-if="isPost" />
+    <Timeline v-else-if="isTimeline" />
+    <HistoryPage v-else-if="isHistory" />
     <Base v-else />
     <Footer />
   </v-app>
@@ -28,6 +30,8 @@
   import EventPage from './EventPage';
   import Blog from './Blog';
   import PostPage from './PostPage';
+  import Timeline from './Timeline';
+  import HistoryPage from './HistoryPage';
   import Base from './Base';
   import Footer from "./components/Footer"
   export default {
@@ -43,6 +47,8 @@
         EventPage,
         Blog,
         PostPage,
+        Timeline,
+        HistoryPage,
         Base,
         Footer
       },
@@ -75,6 +81,10 @@
           const {path} = this.$page;
           return path === "/posts/";
         },
+        isTimeline() {
+          const {path} = this.$page;
+          return path === "/history/";
+        },
         isStation() {
           const {path} = this.$page;
           return path.startsWith("/stations/");
@@ -90,6 +100,10 @@
         isPost() {
           const {path} = this.$page;
           return path.startsWith("/posts/");
+        },
+        isHistory() {
+          const {path} = this.$page;
+          return path.startsWith("/history/");
         }
       }
   };

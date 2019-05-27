@@ -72,6 +72,11 @@ module.exports = {
               icon: 'format_quote'
           },
           {
+              text: 'History',
+              link: '/history/',
+              icon: 'replay'
+          },
+          {
               text: 'Contact',
               link: '/contact.html',
               icon: 'email'
