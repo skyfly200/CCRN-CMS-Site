@@ -1,5 +1,5 @@
 <template>
-  <v-card>
+  <v-card class="elevation-2">
     <v-img v-if="frontmatter.image" :src="$withBase(frontmatter.image)" alt="Timeline item image" height="200px" class="white--text" />
     <v-card-title>
         <h1>{{ frontmatter.title }}</h1>
