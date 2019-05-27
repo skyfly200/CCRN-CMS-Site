@@ -19,7 +19,7 @@
         </v-layout>
         <v-layout class="pa-4 body" wrap>
           <v-flex xs12 md10 offset-md1 class="pa-4 heading">
-            <v-img width="100%" class="logo" :src="$page.frontmatter.logo" />
+            <v-img class="logo" :src="$page.frontmatter.logo" />
             <div class="quote-block">
               <p class="quote">"{{ $page.frontmatter.quote }}"</p>
               <div class="quote-attr">
@@ -36,7 +36,7 @@
           </v-flex>
           <v-flex xs12 md10 offset-md1 class="pa-4 cards">
             <v-card v-for="card in $page.frontmatter.cards" class="ma-4 pa-2 card">
-              <v-icon class="card-icon" x-large>{{ card.icon }}</v-icon>
+              <v-icon class="pa-3 card-icon" x-large>{{ card.icon }}</v-icon>
               <v-card-title>{{ card.text }}</v-card-title>
               <v-card-actions>
                 <v-btn :to="card.linkTo">{{ card.linkText }}</v-btn>
@@ -74,11 +74,10 @@ export default {
   }
   .heading {
     display: flex;
-
   }
   .logo {
     margin: 10px;
-    max-width: 300px;
+    width: 300px;
     align-items: center;
   }
   .quote-block {
@@ -102,8 +101,10 @@ export default {
     align-items: center;
   }
   .cards {
+    margin: 10vh 0;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
   .card {
     display: flex;
@@ -111,6 +112,17 @@ export default {
     align-items: center;
     text-align: center;
     flex: 1;
+  }
+  @media (max-width: 750px) {
+    .heading {
+      flex-direction: column;
+    }
+    .logo {
+      width: 100%;
+    }
+    .card {
+      flex: 100%;
+    }
   }
   .text {
     margin: 10px;

@@ -4,7 +4,7 @@ parallaxImage: "/assets/Banshee Tree.jpg"
 parallaxHeader: "Colorado Community Radio Network"
 parallaxContent: "Pure Community Radio Redefined"
 logo: /assets/CCRN_logo.png
-quote: "Defining a new paridigm of community radio since 2013"
+quote: "Defining a new paradigm of community radio since 2013"
 quoteName: Skyler Fly-Wilson
 quoteTitle: CCRN Co-founder
 quoteAvatar: "/assets/Skyler-pic.jpg"
