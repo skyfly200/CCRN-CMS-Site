@@ -17,11 +17,35 @@
               {{ page.text}}
           </v-btn>
         </v-layout>
-        <v-layout class="pa-4 body" wrap >
-          <v-flex xs12 md10 offset-md1 class="logo">
-            <v-img width="100%" max-width="300" src="/assets/CCRN_logo.png" />
+        <v-layout class="pa-4 body" wrap>
+          <v-flex xs12 md10 offset-md1 class="pa-4 heading">
+            <v-img width="100%" class="logo" :src="$page.frontmatter.logo" />
+            <div class="quote-block">
+              <p class="quote">"{{ $page.frontmatter.quote }}"</p>
+              <div class="quote-attr">
+                <v-spacer/>
+                <v-avatar class="quote-avatar">
+                  <v-img :src="$page.frontmatter.quoteAvatar" />
+                </v-avatar>
+                <div class="quote-attr-text">
+                  <span class="quote-name">{{ $page.frontmatter.quoteName }}</span>
+                  <span class="quote-title">{{ $page.frontmatter.quoteTitle }}</span>
+                </div>
+              </div>
+            </div>
           </v-flex>
-          <v-flex class="text"><Content /></v-flex>
+          <v-flex xs12 md10 offset-md1 class="pa-4 cards">
+            <v-card v-for="card in $page.frontmatter.cards" class="ma-4 pa-2 card">
+              <v-icon class="card-icon" x-large>{{ card.icon }}</v-icon>
+              <v-card-title>{{ card.text }}</v-card-title>
+              <v-card-actions>
+                <v-btn :to="card.linkTo">{{ card.linkText }}</v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-flex>
+          <v-flex xs12 md10 offset-md1>
+            <Content />
+          </v-flex>
         </v-layout>
       </v-container>
     </v-content>
@@ -48,12 +72,45 @@ export default {
     align-items: center;
     flex-direction: column;
   }
+  .heading {
+    display: flex;
+
+  }
   .logo {
     margin: 10px;
+    max-width: 300px;
+    align-items: center;
+  }
+  .quote-block {
+    padding-left: 1em;
+    margin-top: 6%; 
+  }
+  .quote {
+    font-size: 2em;
+  }
+  .quote-attr {
+    display: flex;
+  }
+  .quote-attr-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    padding-top: 0.5em;
   }
   .body {
     display: flex;
     align-items: center;
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
   }
   .text {
     margin: 10px;
