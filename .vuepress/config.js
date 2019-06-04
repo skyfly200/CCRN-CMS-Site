@@ -93,11 +93,6 @@ module.exports = {
         icon: "archive"
       },
       {
-        text: "Blog",
-        link: "/posts/",
-        icon: "format_quote"
-      },
-      {
         text: "Docs",
         link: "/docs/",
         icon: "description"
