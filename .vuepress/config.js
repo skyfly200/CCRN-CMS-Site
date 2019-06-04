@@ -93,14 +93,14 @@ module.exports = {
         icon: "archive"
       },
       {
-        text: "Docs",
-        link: "/docs/",
-        icon: "description"
-      },
-      {
         text: "History",
         link: "/history/",
         icon: "replay"
+      },
+      {
+        text: "Docs",
+        link: "/docs/",
+        icon: "description"
       },
       {
         text: "Contact",
