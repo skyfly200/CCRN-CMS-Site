@@ -1,6 +1,5 @@
 <template>
   <v-card>
-    <v-img v-if="frontmatter.image" :src="$withBase(frontmatter.image)" alt="Blog post image" height="200px" class="white--text" />
     <v-card-title>
       <h1> {{ frontmatter.title }} </h1>
     </v-card-title>
