@@ -10,8 +10,8 @@
     <ArchivePage v-else-if="isArchive" />
     <Events v-else-if="isEvents" />
     <EventPage v-else-if="isEvent" />
-    <Blog v-else-if="isBlog" />
-    <PostPage v-else-if="isPost" />
+    <DocIndex v-else-if="isDocs" />
+    <DocPage v-else-if="isDoc" />
     <Timeline v-else-if="isTimeline" />
     <HistoryPage v-else-if="isHistory" />
     <Base v-else />
@@ -28,8 +28,8 @@
   import ArchivePage from './ArchivePage';
   import Events from './Events';
   import EventPage from './EventPage';
-  import Blog from './Blog';
-  import PostPage from './PostPage';
+  import DocIndex from './DocIndex';
+  import DocPage from './DocPage';
   import Timeline from './Timeline';
   import HistoryPage from './HistoryPage';
   import Base from './Base';
@@ -45,8 +45,8 @@
         ArchivePage,
         Events,
         EventPage,
-        Blog,
-        PostPage,
+        DocIndex,
+        DocPage,
         Timeline,
         HistoryPage,
         Base,
@@ -77,9 +77,9 @@
           const {path} = this.$page;
           return path === "/events/";
         },
-        isBlog() {
+        isDocs() {
           const {path} = this.$page;
-          return path === "/posts/";
+          return path === "/docs/";
         },
         isTimeline() {
           const {path} = this.$page;
@@ -97,9 +97,9 @@
           const {path} = this.$page;
           return path.startsWith("/events/");
         },
-        isPost() {
+        isDoc() {
           const {path} = this.$page;
-          return path.startsWith("/posts/");
+          return path.startsWith("/docs/");
         },
         isHistory() {
           const {path} = this.$page;

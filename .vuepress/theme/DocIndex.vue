@@ -1,5 +1,5 @@
 <template>
-  <div class="events-layout">
+  <div class="docs-layout">
     <Nav />
     <v-content>
       <v-container fluid>
@@ -13,9 +13,9 @@
         </v-layout>
         <v-layout class="pa-2" align-center justify-left row fill-height>
           <v-flex v-for="p in posts" :key="p.title" xs12 md6>
-            <Post class="post section ma-2" :frontmatter="p.frontmatter" :title="p.title" :path="p.path" feature="true" md12 >
+            <Doc class="post section ma-2" :frontmatter="p.frontmatter" :title="p.title" :path="p.path" feature="true" md12 >
               <p> {{ p.frontmatter.description }} </p>
-            </Post>
+            </Doc>
           </v-flex>
         </v-layout>
       </v-container>
@@ -24,11 +24,11 @@
 </template>
 <script>
 import Nav from "./components/Nav"
-import Post from "./components/Post"
+import Doc from "./components/Doc"
 export default {
   components: {
     Nav,
-    Post
+    Doc
   },
   computed: {
       posts() {

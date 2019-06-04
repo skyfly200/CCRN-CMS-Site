@@ -2,6 +2,4 @@
 title: Documentation
 ---
 
-Learn about how to do what we do!
-
-Put links to docs here
+Learn how to run a radio station or network
