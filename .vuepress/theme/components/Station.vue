@@ -1,16 +1,22 @@
 <template>
   <v-card>
-    <v-img v-if="frontmatter.image" :src="$withBase(frontmatter.image)" alt="Station Logo" class="white--text" />
     <v-card-title>
       <h1> {{ frontmatter.title }} </h1>
     </v-card-title>
     <v-divider light></v-divider>
     <v-card-text>
-      <h2>{{ frontmatter.frequency }} {{ frontmatter.callsign }}</h2>
-      <h3>Location: {{ frontmatter.location }}</h3>
-      <Stream class="stream" :frontmatter="{ url: frontmatter.streamUrl }" />
+      <v-layout>
+        <v-flex class="md12 lg6">
+          <v-img :src="$withBase(frontmatter.image)" alt="Station Logo" class="white--text" />
+        </v-flex>
+        <v-flex class="md12 lg6 ma-2">
+          <h2>{{ frontmatter.frequency }} {{ frontmatter.callsign }}</h2>
+          <h3>Location: {{ frontmatter.location }}</h3>
+          <Stream class="stream" :frontmatter="{ url: frontmatter.streamUrl }" />
+        </v-flex>
+      </v-layout>
       <p>{{ frontmatter.description }}</p>
-      <Schedule :schedule="frontmatter.schedule" />
+      <Schedule v-if="feature" :schedule="frontmatter.schedule" />
       <slot></slot>
     </v-card-text>
     <v-divider light></v-divider>
