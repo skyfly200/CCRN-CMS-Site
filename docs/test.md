@@ -1,8 +1,8 @@
 ---
 title: Testing
-description: you can have a short post description here
+description: you can have a short description of the document here
 ---
 
-# Section Heading
+# Sample Document
 
-then the rest goes here
+You can enter content here
