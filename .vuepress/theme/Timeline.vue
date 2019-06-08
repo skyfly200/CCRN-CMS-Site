@@ -13,7 +13,7 @@
         </v-layout>
         <v-layout class="pa-2" align-center justify-left row fill-height>
           <v-flex xs12 md10 offset-md1>
-              <v-timeline>
+              <v-timeline dense>
                 <v-timeline-item small v-for="i in items" :key="i.title">
                     <template v-slot:opposite>
                         <span>{{ i.frontmatter.date }}</span>
