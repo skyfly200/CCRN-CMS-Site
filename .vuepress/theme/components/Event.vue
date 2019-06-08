@@ -21,7 +21,7 @@
               <h3 v-else-if="frontmatter.venue"> {{ frontmatter.venue }} </h3>
               <h4 v-if="frontmatter.location"> {{ frontmatter.location }} </h4>
               <h5> {{ frontmatter.datetime }} </h5>
-              <a v-if="frontmatter.url" :href="frontmatter.url"><h3>{{ frontmatter.url }}</h3></a>
+              <a v-if="frontmatter.url && feature" :href="frontmatter.url"><h3>{{ frontmatter.url }}</h3></a>
               <slot></slot>
           </v-flex>
         </v-layout>
@@ -47,4 +47,7 @@ export default {
 };
 </script>
 <style>
+.v-card__text{
+  min-height: 8em
+}
 </style>
