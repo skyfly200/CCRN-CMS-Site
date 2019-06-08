@@ -123,6 +123,9 @@ export default {
     text-align: center;
     flex: 1;
   }
+  .v-card__title {
+    flex: 1 1 auto;
+  }
   @media (max-width: 750px) {
     .heading {
       flex-direction: column;
