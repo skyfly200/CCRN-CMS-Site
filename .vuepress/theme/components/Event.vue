@@ -47,6 +47,9 @@ export default {
 };
 </script>
 <style>
+.v-card__title {
+    height: 7em;
+}
 .v-card__text{
   min-height: 8em
 }
