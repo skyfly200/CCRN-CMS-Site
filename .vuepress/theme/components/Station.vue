@@ -7,7 +7,7 @@
     <v-card-text>
       <v-layout>
         <v-flex class="md12 lg6">
-          <v-img :src="$withBase(frontmatter.image)" alt="Station Logo" class="white--text" />
+          <v-img :src="$withBase(frontmatter.image)" alt="Station Logo" aspect-ratio="1" contain class="white--text" />
         </v-flex>
         <v-flex class="md12 lg6 ma-2">
           <h2>{{ frontmatter.frequency }} {{ frontmatter.callsign }}</h2>
