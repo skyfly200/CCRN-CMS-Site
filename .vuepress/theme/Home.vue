@@ -9,13 +9,17 @@
             <h3 class="paralax-content"> {{ $page.frontmatter.parallaxContent }} </h3>
           </div>
         </v-parallax>
-        <v-layout class="hidden-sm-and-down">
-          <v-btn flat
-            v-for="page in menuPages"
-            :key="page.text"
-            :to="page.link">
-              {{ page.text}}
-          </v-btn>
+        <v-layout class="menu hidden-sm-and-down">
+          <v-toolbar dense color="secondary">
+            <v-toolbar-items>
+              <v-btn flat
+                v-for="page in menuPages"
+                :key="page.text"
+                :to="page.link">
+                  {{ page.text}}
+              </v-btn>
+            </v-toolbar-items>
+          </v-toolbar>
         </v-layout>
         <v-layout class="pa-4 body" wrap>
           <v-flex xs12 md10 offset-md1 class="pa-4 heading">
@@ -78,6 +82,9 @@ export default {
   }
   .paralax-content {
     font-size: 1.8em;
+  }
+  .menu .v-btn {
+    color: #FFF!important;
   }
   .heading {
     display: flex;
