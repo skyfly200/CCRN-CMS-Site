@@ -20,7 +20,7 @@ module.exports = {
       "link",
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Cardo|Contrail+One&display=swap"
+        href: "https://fonts.googleapis.com/css?family=Cardo&display=swap"
       }
     ],
     ["link", { rel: "icon", href: `/assets/ccrn-icon.jpg` }],

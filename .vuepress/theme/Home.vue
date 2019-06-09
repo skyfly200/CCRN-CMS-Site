@@ -23,7 +23,7 @@
         </v-layout>
         <v-layout class="pa-4 body" wrap>
           <v-flex xs12 md10 offset-md1 class="pa-4 heading">
-            <v-img class="logo" :src="$page.frontmatter.logo" />
+            <v-img class="logo" :src="$page.frontmatter.logo" contain />
             <div class="quote-block">
               <p class="quote">"{{ $page.frontmatter.quote }}"</p>
               <div class="quote-attr">

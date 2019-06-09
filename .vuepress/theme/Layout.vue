@@ -118,6 +118,9 @@
   body * {
     font-family: 'Cardo', sans-serif !important;
   }
+  * i {
+    font-family: 'Material Icons' !important;
+  }
   .v-btn + .primary {
     color: #000!important;
   }
