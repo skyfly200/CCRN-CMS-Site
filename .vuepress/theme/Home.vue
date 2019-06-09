@@ -70,6 +70,9 @@ export default {
 };
 </script>
 <style>
+  .container {
+    padding: 0 !important;
+  }
   .paralax-body {
     text-align: center;
     display: flex;

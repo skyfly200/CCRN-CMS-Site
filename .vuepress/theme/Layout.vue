@@ -112,11 +112,10 @@
   .container {
     padding: 0;
   }
-  body, h1, h2, h3, h4, h5, h6 {
-    font-family: 'Contrail One', san-serif !important;
-  }
-  body p {
+  body {
     font-size: 1.2em;
+  }
+  body * {
     font-family: 'Cardo', sans-serif !important;
   }
   .v-btn + .primary {
