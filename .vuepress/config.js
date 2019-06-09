@@ -13,6 +13,13 @@ module.exports = {
       "link",
       {
         rel: "stylesheet",
+        href: "https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css"
+      }
+    ],
+    [
+      "link",
+      {
+        rel: "stylesheet",
         href: `https://fonts.googleapis.com/icon?family=Material+Icons`
       }
     ],
