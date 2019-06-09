@@ -13,7 +13,7 @@
         </v-layout>
         <v-layout class="pa-2" align-center justify-left row fill-height>
           <v-flex xs12 md10 offset-md1>
-              <v-timeline dense>
+              <v-timeline :dense="this.$vssWidth <= 720">
                 <v-timeline-item small v-for="i in items" :key="i.title">
                     <template v-slot:opposite>
                         <span>{{ i.frontmatter.date }}</span>
@@ -30,13 +30,16 @@
   </div>
 </template>
 <script>
+import VueScreenSize from 'vue-screen-size'
 import Nav from "./components/Nav"
 import TimelineItem from "./components/TimelineItem"
+
 export default {
   components: {
     Nav,
     TimelineItem
   },
+  mixins: [VueScreenSize.VueScreenSizeMixin],
   computed: {
       items() {
         let items = this.$site.pages
