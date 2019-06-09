@@ -44,7 +44,7 @@ export default {
       items() {
         let items = this.$site.pages
           .filter(page => page.path.endsWith(".html") && page.path.startsWith(this.$page.path))
-          .sort((a, b) => Date.parse(b.frontmatter.datetime) - Date.parse(a.frontmatter.datetime));
+          .sort((a, b) => Date.parse(b.frontmatter.date) - Date.parse(a.frontmatter.date));
         return items;
       }
   }
