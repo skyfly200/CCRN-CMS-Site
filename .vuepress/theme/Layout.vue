@@ -115,4 +115,7 @@
   body p {
     font-size: 1.2em
   }
+  .v-btn {
+    color: #000!important;
+  }
 </style>

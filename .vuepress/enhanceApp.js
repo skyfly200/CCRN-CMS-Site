@@ -6,7 +6,13 @@ export default ({
   router, // the router instance for the app
   siteData // site metadata
 }) => {
-    Vue.use(Vuetify)
+    Vue.use(Vuetify, {
+      theme: {
+        primary: '#FFD700',
+        secondary: '#002868',
+        accent: '#BF0A30'
+      }
+    })
     router.beforeEach((to, from, next) => {
       if (to.matched.length > 0 && to.matched[0].path === "*") {
         next("/404.html");

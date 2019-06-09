@@ -15,7 +15,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar app>
+    <v-toolbar app color="secondary" dark>
       <v-toolbar-side-icon @click.stop="drawer = !drawer" class="hidden-md-and-up">
         <v-icon>menu</v-icon>
       </v-toolbar-side-icon>
@@ -51,3 +51,8 @@
       },
   };
 </script>
+<style>
+  .v-toolbar .v-btn {
+    color: #FFF!important;
+  }
+</style>

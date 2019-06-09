@@ -21,8 +21,8 @@
     </v-card-text>
     <v-divider light></v-divider>
     <v-card-actions>
-      <v-btn :href="frontmatter.webUrl" target="_blank" color="green">Visit Website</v-btn>
-      <v-btn v-if="!feature" :to="path" color="blue">Read More</v-btn>
+      <v-btn :href="frontmatter.webUrl" target="_blank" color="accent">Visit Website</v-btn>
+      <v-btn v-if="!feature" :to="path" color="secondary">Read More</v-btn>
     </v-card-actions>
   </v-card>
 </template>

@@ -43,9 +43,9 @@
                 ></v-textarea>
                 <v-btn
                   :disabled="!valid"
-                  @click="submit" >
+                  @click="submit" color="primary">
                 submit</v-btn>
-                <v-btn @click="clear">clear</v-btn>
+                <v-btn @click="clear" color="accent">clear</v-btn>
                 <v-alert v-if="alert" :value="alert" :type="alertType"> {{ alert }} </v-alert>
               </v-form>
             </v-card>
