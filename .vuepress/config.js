@@ -58,15 +58,6 @@ module.exports = {
       config.devServer = {
         hot: false
       };
-      config.rules = [
-        {
-          test: /\.styl$/,
-          include: [
-            path.resolve(__dirname, "not_exist_path")
-          ],
-          loader: ['style-loader', 'css-loader', 'stylus-loader']
-        }
-      ];
     }
   },
   serviceWorker: true,
