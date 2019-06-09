@@ -112,13 +112,14 @@
   .container {
     padding: 0;
   }
+  body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Contrail One', san-serif !important;
+  }
   body p {
     font-size: 1.2em;
+    font-family: 'Cardo', sans-serif !important;
   }
-  .v-btn {
+  .v-btn + .primary {
     color: #000!important;
-  }
-  .v-btn + .secondary {
-    color: #FFF!important;
   }
 </style>

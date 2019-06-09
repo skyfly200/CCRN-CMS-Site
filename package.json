@@ -13,7 +13,11 @@
   },
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "^1.0.0-alpha.0",
+    "css-loader": "^2.1.1",
     "netlify-lambda": "^1.4.5",
+    "style-loader": "^0.23.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
     "vuepress": "^0.14.8",
     "vuetify": "^1.5.14"
   },

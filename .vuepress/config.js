@@ -13,14 +13,14 @@ module.exports = {
       "link",
       {
         rel: "stylesheet",
-        href: `https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css`
+        href: `https://fonts.googleapis.com/icon?family=Material+Icons`
       }
     ],
     [
       "link",
       {
         rel: "stylesheet",
-        href: `https://fonts.googleapis.com/icon?family=Material+Icons`
+        href: "https://fonts.googleapis.com/css?family=Cardo|Contrail+One&display=swap"
       }
     ],
     ["link", { rel: "icon", href: `/assets/ccrn-icon.jpg` }],
@@ -58,6 +58,15 @@ module.exports = {
       config.devServer = {
         hot: false
       };
+      config.rules = [
+        {
+          test: /\.styl$/,
+          include: [
+            path.resolve(__dirname, "not_exist_path")
+          ],
+          loader: ['style-loader', 'css-loader', 'stylus-loader']
+        }
+      ];
     }
   },
   serviceWorker: true,
