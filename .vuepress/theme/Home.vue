@@ -75,7 +75,12 @@ export default {
       }
   },
   mounted() {
-    // setup quote transition timer
+    // setup quote transition timer to call nextQuote
+  },
+  methods: {
+    nextQuote() {
+      quoteIndex = (quoteIndex + 1) % this.$page.frontmatter.quotes.length;
+    }
   },
   components: {
     Nav
