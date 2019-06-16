@@ -60,14 +60,22 @@
 <script>
 import Nav from "./components/Nav"
 export default {
+  data: function() {
+    return {
+      quoteIndex: 0
+    };
+  },
   computed: {
       menuPages() {
         let pages = this.$site.themeConfig.nav || [];
         return pages.filter(p => p.title !== "home");
       },
       quote() {
-        return this.$page.frontmatter.quotes[0];
+        return this.$page.frontmatter.quotes[this.quoteIndex];
       }
+  },
+  mounted() {
+    // setup quote transition timer
   },
   components: {
     Nav
