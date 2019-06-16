@@ -24,9 +24,9 @@
         <v-layout class="pa-4 body" wrap>
           <v-flex xs12 md10 offset-md1 class="pa-4 heading">
             <v-img class="logo" :src="$page.frontmatter.logo" contain />
-            <div class="quote-block" v-for="quote in $page.frontmatter.quotes">
-              <div class="quotes">
-                <p class="quote">"{{ quote.quote }}"</p>
+            <div class="quote-block">
+              <div class="quote">
+                <p class="quote-text">"{{ quote.quote }}"</p>
                 <div class="quote-attr">
                   <v-spacer/>
                   <v-avatar class="quote-avatar">
@@ -64,6 +64,9 @@ export default {
       menuPages() {
         let pages = this.$site.themeConfig.nav || [];
         return pages.filter(p => p.title !== "home");
+      },
+      quote() {
+        return this.$page.frontmatter.quotes[0];
       }
   },
   components: {
@@ -103,7 +106,7 @@ export default {
     padding-left: 1em;
     margin-top: 6%; 
   }
-  .quote {
+  .quote-text {
     font-size: 2em;
   }
   .quote-avatar .v-image {

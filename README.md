@@ -9,6 +9,10 @@ quotes:
       quoteName: Skyler Fly-Wilson
       quoteTitle: CCRN Co-founder
       quoteAvatar: "/assets/Skyler-pic.jpg"
+    - quote: "Test"
+      quoteName: Tester
+      quoteTitle: Member
+      quoteAvatar: "/assets/ccrn-logo.jpg"
 cards:
     - text: Autonomous, independent, volunteer driven radio stations
       icon: radio
