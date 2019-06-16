@@ -24,16 +24,18 @@
         <v-layout class="pa-4 body" wrap>
           <v-flex xs12 md10 offset-md1 class="pa-4 heading">
             <v-img class="logo" :src="$page.frontmatter.logo" contain />
-            <div class="quote-block">
-              <p class="quote">"{{ $page.frontmatter.quote }}"</p>
-              <div class="quote-attr">
-                <v-spacer/>
-                <v-avatar class="quote-avatar">
-                  <v-img :src="$page.frontmatter.quoteAvatar" />
-                </v-avatar>
-                <div class="quote-attr-text">
-                  <span class="quote-name">{{ $page.frontmatter.quoteName }}</span>
-                  <span class="quote-title">{{ $page.frontmatter.quoteTitle }}</span>
+            <div class="quote-block" v-for="quote in $page.frontmatter.quotes">
+              <div class="quotes">
+                <p class="quote">"{{ quote.quote }}"</p>
+                <div class="quote-attr">
+                  <v-spacer/>
+                  <v-avatar class="quote-avatar">
+                    <v-img :src="quote.quoteAvatar" />
+                  </v-avatar>
+                  <div class="quote-attr-text">
+                    <span class="quote-name">{{ quote.quoteName }}</span>
+                    <span class="quote-title">{{ quote.quoteTitle }}</span>
+                  </div>
                 </div>
               </div>
             </div>

@@ -42,6 +42,39 @@ collections:
               widget: "text",
               hint: "Text block centered on paralax area",
             }
+          - label: "Quotes"
+            name: "quotes"
+            widget: "list"
+            fields:
+              - {
+                  label: "Quote",
+                  name: "quote",
+                  widget: "string",
+                  default: "This is a quote",
+                  hint: "The quoted text",
+                }
+              - {
+                  label: "Quote Author",
+                  name: "quoteName",
+                  widget: "string",
+                  default: "John Doe",
+                  hint: "The quoted person",
+                }
+              - {
+                  label: "Author Title",
+                  name: "quoteTitle",
+                  widget: "string",
+                  default: "Member",
+                  hint: "The quoted persons title in the organization",
+                }
+              - {
+                  label: "Author Avatar",
+                  name: "quoteAvatar",
+                  widget: "image",
+                  default: "/assets/ccrn-icon.jpg",
+                  hint: "An image of the quote author",
+                }
+              
           - { label: "Body", name: "body", widget: "markdown" }
       - label: "Bio"
         name: "bio"
