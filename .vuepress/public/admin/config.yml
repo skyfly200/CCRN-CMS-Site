@@ -51,6 +51,7 @@ collections:
                   name: "quote",
                   widget: "string",
                   default: "This is a quote",
+                  pattern: [".{,120}", "Must have under 120 characters"],
                   hint: "The quoted text",
                 }
               - {
@@ -58,6 +59,7 @@ collections:
                   name: "quoteName",
                   widget: "string",
                   default: "John Doe",
+                  pattern: [".{,30}", "Must have under 30 characters"],
                   hint: "The quoted person",
                 }
               - {
@@ -65,6 +67,7 @@ collections:
                   name: "quoteTitle",
                   widget: "string",
                   default: "Member",
+                  pattern: [".{,30}", "Must have under 30 characters"],
                   hint: "The quoted persons title in the organization",
                 }
               - {
